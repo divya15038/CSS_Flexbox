@@ -121,3 +121,77 @@ nav a{
         font-weight: bold;
     }
 }
+
+/* Featured Teas */ 
+#featured_tea{
+    max-width: 45.45rem;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 4rem;
+}
+
+#featured_tea .content{
+    margin: 1rem 0;
+}
+#featured_tea .content h2{
+    margin: 1rem 0;
+    font-size: 1.55rem;
+    font-weight: bolder;
+}
+
+#featured_tea .content h4{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#featured_tea .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#featured_tea .container img {
+    height: 9.09rem;
+    width: 13.63rem;
+    border-radius: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+#featured_tea .container figure{
+    margin: 0.75rem;
+    flex-shrink: 2;
+}
+
+#featured_tea figure figcaption{
+    font-weight: bold;
+}
+
+@media only screen and (max-width:760px){
+    #featured_tea {
+        top: 3rem;
+    }
+    #featured_tea .content h2{
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin:0;
+    }
+    #featured_tea .content h4{
+        font-size: 0.85rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin:0;
+    }
+    #featured_tea .container img {
+        margin: 0;
+    }
+    #featured_tea figure figcaption{
+        font-size: 0.95rem;
+        font-weight: bold;
+    }
+    #featured_tea .container figure{
+        margin: 0.5rem;
+    }
+}
