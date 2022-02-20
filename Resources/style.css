@@ -29,6 +29,7 @@ html {
     text-align: center;
 }
 
+/* Header */
 header .content{
     display: flex;
     width: 100%;
@@ -37,12 +38,14 @@ header .content{
     position: fixed;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    z-index: 1;
 }
 
 header .logo img{
     height: 2.27rem;
     width: auto;
-    margin-right: 0.45rem;
+    margin-left: 0.45rem;
 }
 
 nav {
@@ -64,5 +67,57 @@ nav a{
     }
     nav a {
         font-size: 20px;
+    }
+}
+
+#mission {
+    height: 31.81rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 3.13rem;
+}
+
+#mission .content {
+    position: relative;
+    top: 50%;
+    background-color: black;
+}
+
+#mission .content h2{
+    font-size: 1.55rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+#mission .content h4{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width:760px){
+    #mission{
+        height: 25rem;
+        text-align: center;
+    }
+
+    #mission .content{
+        top: 45%;
+    }
+    #mission .content h2{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #mission .content h4 {
+        font-size: 0.75rem;
+        font-weight: bold;
     }
 }
