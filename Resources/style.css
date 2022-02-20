@@ -195,3 +195,90 @@ nav a{
         margin: 0.5rem;
     }
 }
+
+/* Locations */
+#locations {
+    height: 25.72rem;
+    margin: 0 0.95rem;
+    position: relative;
+    top: 7rem;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#locations .content h2 {
+    margin-bottom: 0.681rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 4rem;
+    font-size: 1.55rem;
+    font-weight: bolder;
+    margin-bottom: 0.63rem;
+}
+
+#locations .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+#locations .main-container .container {
+    background-color: black;
+    margin:0 1rem;
+    width: 13.63rem;
+    height: 11.36rem;
+    opacity:1;
+    border-radius: 0.15rem;
+}
+
+#locations .main-container .container h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.25rem;
+}
+
+#locations .main-container .container p {
+    margin: 1.25rem 0;
+    line-height: 2.75;
+}
+
+@media only screen and (max-width:1000px) {
+    #locations .main-container .container {
+        margin: 0 0.5rem;
+    }
+    #locations .main-container .container p {
+        line-height: 1.8;
+    }
+}
+
+@media only screen and (max-width:760px){
+    #locations .content h2 {
+        top: 20%;
+        font-size: 1.75rem;
+    }
+
+    #locations .main-container {
+        flex-wrap: wrap;
+        top: 3%;
+    }
+
+    #locations .main-container .container {
+        height: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    #locations .main-container .container h3 {
+        margin: 0.25rem;
+    }
+
+    #locations .main-container .container p {
+        font-size: 0.9rem;
+        margin: 0.25rem;
+        line-height: 1.2;
+    }
+}
